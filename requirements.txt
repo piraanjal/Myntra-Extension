@@ -1,0 +1,11 @@
+Flask
+flask-cors
+selenium
+webdriver-manager
+beautifulsoup4
+requests
+numpy
+pandas
+Pillow
+tensorflow
+scikit-learn

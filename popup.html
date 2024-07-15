@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page URL Recorder</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+        background-blend-mode: screen;
+        width: 300px;
+        height: 400px;
+    }
+
+    header {
+        background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    header .logo {
+        width: 200px;
+        height: auto; 
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .item-list {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 500px;
+        padding: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .item a {
+        text-decoration: none;
+        color: #ff3f6c;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .item a:hover {
+        color: #d6304a;
+    }
+
+    .more-styles{
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#d57eeb;
+    }
+
+    #currentUrl {
+      font-size: 2em;
+      color: #ff3f6c;
+      font-weight: bold;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <header>
+      <img src="./assests/myntra.png" alt="Myntra Logo" class="logo">
+      <h1>Similar Items on Myntra</h1>
+    </header>
+    <div id="ext" class="item-list">
+      <p id="currentUrl">Loading...</p>
+    </div>
+    <div class="more-styles">
+      <a href="https://www.myntra.com" target="_blank">For more such styles, visit Myntra</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
